@@ -1,4 +1,5 @@
 import './globals.css'
+import { AppWrapper } from '@/app/admin/settings/page';
 
 
 export const metadata = {
@@ -9,9 +10,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
+      <AppWrapper>
+      {/* Ваш код приложения */}
+    
       <body className='h-screen w-screen '>
         {children}
         </body>
+        </AppWrapper>
     </html>
   )
 }
